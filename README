@@ -1,0 +1,7 @@
+This MATLAB script "plot_qei_4D.m" takes 4D data in from a magnetism simulation program called mcphase (http://www.cpfs.mpg.de/~rotter/homepage_mcphase/McPhase_-_the_World_of_Rare_Earth_Magnetism.html).  The data files from the dispersion calculation *.qei are in a columnar format with three q-direcitons (momentum space) an energy direciton and an intensity.  This script reads in these *.qei files, bins the data, and outputs several visualizations including a "powder averaged" plot (i.e. data binned up and plotted vs. |q|).  
+
+NOTE: makes use of the "sliceomatic" 3D visualization pogram developed for MATLAB by someone else (not me — find it here http://www.mathworks.com/matlabcentral/fileexchange/764-sliceomatic).  One needs to add this to their MATLAB toolbox to use this very cool feature.
+
+Currently sliceomatic does not accept non-integer numbers for axes labels.  I am planning on trying to modify this so that the sliceomatic viewer can actually show the correct Q and Energy values as you slice through.  This has been implemented in, for example, Horace (http://horace.isis.rl.ac.uk/Main_Page).
+
+
